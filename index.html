@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <header id="header">
+    <h1>Simple, traffic-based pricing</h1>
+    <div><h2>Sign-up for our 30-day trial.</h2><h2>No credit card required.</h2></div>
+  </header>
+
+  <div id="main">
+    <div id="stats">
+      <div class="pageviews"><p><span id="pageviews">100k</span>&nbsp;Pageviews</p></div>
+      <div class="month-year"><p><span id="money-dollars" data-amount="16">$16.00</span>&nbsp; <span class="month-year-text" data-period="/ month">/ month</span></p></div>
+    </div>
+      <input type="range" min="1" max="25" value="12" class="slider" step="1" id="slider-input">
+      <div class="yearly-options">
+        <p>Monthly Billing</p>  
+        <label class="switch">
+          <input type="checkbox" id="checkbox-input">
+          <span class="slider-round round"></span>
+        </label>
+        <p>Yearly Billing <span class="discount">25% discount</span> <span class="discount-mobile">-25%</span></p>
+      </div>
+      <div class="start-trial">
+        <div class="features">
+          <p>Unlimited websites</p>
+          <p>100% data ownership</p>
+          <p>Email reports</p>
+        </div>
+
+        <div class="button-wrapper">
+          <button>Start my trial</button>
+        </div>
+      </div>
+  </div>
+  <footer class="attribution">
+    <p>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#https://github.com/Andrii-Rohov">ANDRII ROHOV</a>.
+  </p>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

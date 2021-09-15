@@ -1,0 +1,57 @@
+//Neutral
+$White: hsl(0, 0%, 100%);
+$Very-Pale-Blue: hsl(230, 100%, 99%);
+$Lighter-Grayish-Blue: hsl(224, 65%, 95%);
+$Light-Grayish-Blue: hsl(223, 50%, 87%);
+$Grayish-Blue: hsl(225, 20%, 60%);
+$Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+
+//Primary
+
+$Soft-Cyan: hsl(174, 77%, 80%);
+$Strong-Cyan: hsl(174, 86%, 45%);
+$Light-Grayish-Red: hsl(14, 92%, 95%);
+$Light-Red: hsl(15, 100%, 70%);
+$Pale-Blue: hsl(226, 100%, 87%);
+
+
+
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/footer";
+@import "./partials/media";
+
+html {
+    scroll-behavior: smooth;
+    
+}
+::selection {
+    background-color: $Soft-Cyan;
+    text-shadow: 5px 10px 15px currentColor;
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: $Very-Pale-Blue;
+    margin: 0;
+    background-image: url(../images/bg-pattern.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    p:hover {
+        transition: 200ms linear;
+        color: $Dark-Desaturated-Blue !important;
+        cursor: default;
+    }
+}
+
+
+
+
+
+
+
+
+
+

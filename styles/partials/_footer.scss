@@ -1,0 +1,13 @@
+footer {
+    font-size: 14px;
+     text-align: center;
+        a { 
+            color: $Strong-Cyan;
+            font-weight: 800;
+            transition: 200ms linear;
+            &:hover {
+                color: hsla(174, 86%, 45%, 0.637);
+                text-shadow: 1px 1px 10px #d40a0a96;
+            }
+        }
+}

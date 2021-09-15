@@ -1,0 +1,27 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    background-image: url(../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    h1 {
+        font-size: 28px;
+        font-weight: 800;
+        color: $Dark-Desaturated-Blue;
+        margin: 50px 0 0 0;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        margin-top: 11px;
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: $Grayish-Blue;
+            margin: 0 2px 50px 2px;
+        }
+    }
+}

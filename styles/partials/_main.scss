@@ -1,0 +1,258 @@
+#main {
+    width: 37.5%;
+    min-width: 430px;
+    max-width: 800px;
+    min-height: 397px;
+    background-color: $White;
+    margin:  40px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 11px 13px 5px $Lighter-Grayish-Blue;
+    #stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 130px;
+        margin-bottom: 5px;
+        p {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pageviews {
+            text-transform: uppercase;
+            color: $Grayish-Blue;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .month-year {
+            color: $Grayish-Blue;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        #money-dollars {
+            letter-spacing: 0px;
+            font-size: 40px;
+            font-weight: 800;
+            color: $Dark-Desaturated-Blue;
+        }
+        .green-highlight {
+          color: hsla(174, 86%, 45%, 0.637) !important;
+          margin-right: 15px;
+        }
+    }
+    //Slider bar
+    .slider {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 81%; /* Full-width */
+        margin: 0 auto;
+        height: 8px; /* Specified height */
+        border-radius: 50px;
+        background: #d3d3d39d; /* Grey background */
+        outline: none; /* Remove outline */
+        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+        cursor: pointer;
+      }
+      
+      /* Mouse-over effects */
+      .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+      }
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        width: 40px; /* Set a specific slider handle width */
+        height: 40px; /* Slider handle height */
+        background: $Strong-Cyan; /* Green background */
+        cursor: grab; /* Cursor on hover */
+        border-radius: 50%;
+        border: none;
+        background-image: url(../images/icon-slider.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 10px 15px 10px hsla(174, 86%, 45%, 0.455);
+        &:active {
+            cursor: grabbing;
+        }
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 40px; /* Set a specific slider handle width */
+        height: 40px; /* Slider handle height */
+        background: $Strong-Cyan; /* Green background */
+        cursor: grab; /* Cursor on hover */
+        border-radius: 50%;
+        border: none;
+        background-image: url(../images/icon-slider.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 15px 15px 3px  hsla(174, 86%, 45%, 0.455);
+        &:active {
+            cursor: grabbing;
+        }
+      }
+      .slider::-moz-range-progress {
+        height: 100%;
+        border-radius: 50px 0px 0px 50px;
+        background-color: $Soft-Cyan; 
+    }
+       //Slider bar
+
+       .yearly-options {
+           display: flex;
+           flex-direction: row;
+           justify-content: flex-end;
+           align-items: center;
+           margin-top: 55px;
+           margin-bottom: 43px;
+
+           p {
+               color: $Grayish-Blue;
+               font-size: 13px;
+               font-weight: 600;
+               margin: 0 15px;
+               .discount {
+                   color: $Light-Red;
+                   background-color: $Light-Grayish-Red;
+                   font-size: 10px;
+                   border-radius: 50px;
+                   padding: 2px 5px;
+                   font-weight: 800;
+                   margin: 0px 50px 0 7px;
+                   transition: 100ms linear;
+               }
+               .discount-mobile {
+                display: none;
+               }
+               .green-highlight {
+                color: hsla(174, 86%, 45%, 0.937);
+                background-color: hsla(174, 86%, 45%, 0.17);
+        
+              }
+           }
+
+           //CheckBox switch
+           .switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 22px;
+          }
+          
+          .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          
+          .slider-round {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $Light-Grayish-Blue;
+            -webkit-transition: .4s;
+            transition: .4s;
+            &:hover {
+              background-color: $Soft-Cyan;
+            }
+          }
+          
+          .slider-round:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+          input:checked + .slider-round {
+            background-color: $Strong-Cyan;
+          }
+          
+          input:focus + .slider-round {
+            box-shadow: 0 0 1px $Soft-Cyan;
+          }
+          
+          input:checked + .slider-round:before {
+            -webkit-transform: translateX(22px);
+            -ms-transform: translateX(22px);
+            transform: translateX(22px);
+          }
+          
+          /* Rounded sliders */
+          .slider-round.round {
+            border-radius: 34px;
+          }
+          
+          .slider-round.round:before {
+            border-radius: 50%;
+          }
+          //CheckBox switch
+       }
+    
+       .start-trial {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-content: center;
+           border-top: 1px solid $Lighter-Grayish-Blue;
+           padding: 20px 0 25px;
+           .features {
+               width: 50%;
+               min-width: 245px;
+               p {
+                   font-size: 12px;
+                   color: $Grayish-Blue;
+                   margin: 10px 0px 0 50px;
+                   &::before {
+                       content: url(../images/icon-check.svg);
+                       margin-right: 15px;
+                   }
+               }
+           }
+           .button-wrapper {
+               width: 50%;
+               min-width: 200px;
+               display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    width: 64%;
+                    height: 40px;
+                    border-radius: 50px;
+                    background-color: $Dark-Desaturated-Blue;
+                    border: none;
+                    color: $Light-Grayish-Blue;
+                    font-size: 13px;
+                    font-weight: 600;
+                    transition: 100ms linear;
+                    &:hover {
+                        cursor: pointer;
+                        color: $White;
+                        box-shadow: 0px 0px 30px $Strong-Cyan;
+                    }
+                    &:active {
+                      cursor: progress;
+                      color: hsl(226, 48%, 14%);
+                      background-color: hsl(227, 35%, 45%);
+                      font-size: 14px;
+                      box-shadow: 0px 0px 30px hsla(174, 86%, 45%, 0.637);
+                  }
+                }
+           }
+       }
+}
